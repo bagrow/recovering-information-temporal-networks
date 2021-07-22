@@ -27,7 +27,6 @@ James P. Bagrow and Sune Lehmann, Recovering lost and absent information in temp
 ```text
 @unpublished{bagrow2021recovering,
     Author = {Bagrow, James P. and Lehmann, S.},
-    Note = {In preparation},
     Title = {Recovering lost and absent information in temporal networks},
     Year = {2021}
 }
