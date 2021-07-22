@@ -6,7 +6,7 @@ https://bagrow.com
 
 ## Usage
 
-See `recovering_information.sparse_recover()` to get started.
+See [`recovering_information.sparse_recover()`](https://github.com/bagrow/recovering-information-temporal-networks/blob/3d84cf21a6bb47f1da671f8dfd9813a142a6e9df/recovering_information.py#L18) to get started.
 
 ## Requirements
 
