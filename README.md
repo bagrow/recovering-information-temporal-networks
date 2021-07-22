@@ -6,7 +6,7 @@ https://bagrow.com
 
 ## Usage
 
-See `recovering_information.sparse_recovery()` to get started.
+See `recovering_information.sparse_recover()` to get started.
 
 ## Requirements
 
