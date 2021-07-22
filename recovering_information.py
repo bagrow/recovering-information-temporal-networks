@@ -18,20 +18,24 @@ from sklearn.exceptions import ConvergenceWarning
 def sparse_recover(Bmatrix,Nmatrix, alpha, max_iter=1000, tol=0.0001):
     """Sparse recovery implementation.
 
-    Bmatrix - Graph's (unoriented) incidence matrix (numpy array)
-    Nmatrix - n x T matrix (numpy array) of node time series'
-    alpha - regularization hyperparameter (scalar)
+    Args:
+        Bmatrix: Graph's (unoriented) incidence matrix (numpy array).
+        Nmatrix: n x T matrix (numpy array) of node time series'.
+        alpha: regularization hyperparameter (scalar).
+
+    Returns:
+        m x T matrix (numpy array) of edge time series'.
 
     Be careful about the order of rows and columns. The rows and columns in
     Bmatrix should correspond to the rows of N and rows of (recovered) E.
 
     Getting Bmatrix from a networkx Graph:
+        >>> import networkx as nx
+        >>> G = load_network_somehow()
+        >>> elist = get_edgelist_somehow() # optional
+        >>> B = nx.incidence_matrix(G, edgelist=elist).todense()
 
-    >>> import networkx as nx
-    >>> G = load_network_somehow()
-    >>> B = nx.incidence_matrix(G, edgelist=edgelist).todense()
-
-    where `G` is the networkx Graph and `edgelist` is an optional list of edges
+    where `G` is the networkx Graph and `elist` is an optional list of edges
     controlling the order of columns in B.
     """
 
